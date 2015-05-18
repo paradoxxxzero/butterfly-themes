@@ -11,3 +11,7 @@ $ git clone https://github.com/paradoxxxzero/butterfly-themes.git themes
 ```
 
 and then start your server with `--theme=C64` for example.
+
+## Submit your styles
+
+I'll gladly accept any pull request featuring a style !
