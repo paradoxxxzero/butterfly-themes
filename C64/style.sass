@@ -1,45 +1,33 @@
-/* *-* coding: utf-8 *-* */
-/* This file is part of butterfly */
+/* Commodore 64 theme */
 
-/* butterfly Copyright (C) 2014  Florian Mounier */
-/* This program is free software: you can redistribute it and/or modify */
-/* it under the terms of the GNU General Public License as published by */
-/* the Free Software Foundation, either version 3 of the License, or */
-/* (at your option) any later version. */
+$fg: #8e8be1
+$bg: #332ab6
+$font-size: 1.25em
+$shadow: 15px
+$shadow-alpha: 1
 
-/* This program is distributed in the hope that it will be useful, */
-/* but WITHOUT ANY WARRANTY; without even the implied warranty of */
-/* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the */
-/* GNU General Public License for more details. */
+$colors: rgb(0, 0, 0), rgb(104, 55, 43), rgb(88, 141, 67), rgb(184, 199, 111), rgb(53, 40, 121), rgb(111, 61, 134), rgb(112, 164, 178), rgb(149, 149, 149), rgb(68, 68, 68), rgb(154, 103, 89), rgb(154, 210, 132), rgb(184, 199, 111), rgb(108, 94, 181), rgb(111, 61, 134), rgb(112, 164, 178), rgb(255, 255, 255)
 
-/* You should have received a copy of the GNU General Public License */
-/* along with this program.  If not, see <http://www.gnu.org/licenses/>. */
-
-
-
-/* Theses are the various imported style files
-/* You can put this file in /etc/butterfly/style.sass or ~/.butterfly/style.sass
-/* To customize the style of your terminal.
-/* THIS NEEDS the python `libsass` library to be installed.
-/* You can also copy the imported files in those dirs, they will be imported prioritarily.
-
-/* You can change this file to import any webfont:
+@import variables
 @import font
-
-/* You can comment / uncomment the following to enable/disable terminal effects.
 @import light_fx
-/* Comment this one to remove the blurry text:
-/* @import text_fx
-/* @import all_fx
-
+@import text_fx
 @import colors
-/* The color theme is defined in this one:
 @import 16_colors
 @import 256_colors
-
 @import layout
 @import cursor
 @import term_styles
 
 html
   border: 100px solid $fg
+
+  &:after
+    position: fixed
+    display: block
+    width: 100%
+    content: ''
+    height: 100px
+    top: 0
+    left: 0
+    background-color: $fg
